@@ -1,0 +1,15 @@
+{
+    "projectId": "4551565554229091864",
+    "title": "Agency Landing Page",
+    "screens": {
+        "desktop": "3ff028afa63e4edc80ef15f8820a309c",
+        "mobile": "73a11d59a79047cc866f000c641e0f03"
+    },
+    "designTheme": {
+        "colorMode": "LIGHT",
+        "font": "BE_VIETNAM_PRO",
+        "roundness": "ROUND_EIGHT",
+        "customColor": "#ea2a33",
+        "saturation": 2
+    }
+}
