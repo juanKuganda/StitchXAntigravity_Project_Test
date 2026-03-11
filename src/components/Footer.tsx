@@ -7,34 +7,37 @@ export default function Footer() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <footer>
+    <footer className="overflow-hidden">
       {/* GROW TODAY + Red WORK WITH US */}
       <div
         ref={ref}
         className={`grid lg:grid-cols-2 gap-0 reveal ${isVisible ? "visible" : ""}`}
       >
         {/* Left: GROW TODAY */}
-        <div className="bg-[#f5f5f0] p-12 lg:p-20 flex flex-col justify-end min-h-[350px]">
+        <div className="bg-[#f5f5f0] px-8 lg:px-16 py-16 lg:py-24 flex flex-col justify-end min-h-[380px]">
           <h2 className="display-heading text-[clamp(3rem,8vw,6rem)] text-foreground leading-none">
             {footerData.headline}
           </h2>
 
           {/* Small image placeholders */}
-          <div className="mt-8 flex gap-3">
-            <div className="h-20 w-16 bg-foreground/5 rounded-sm" />
-            <div className="h-20 w-16 bg-primary/10 rounded-sm" />
+          <div className="mt-10 flex gap-3">
+            <div className="h-24 w-20 bg-foreground/5 rounded-sm" />
+            <div className="h-24 w-20 bg-primary/10 rounded-sm" />
           </div>
         </div>
 
         {/* Right: Red WORK WITH US */}
-        <div className="bg-primary p-12 lg:p-20 flex flex-col justify-between min-h-[350px]">
+        <div className="bg-primary px-8 lg:px-16 py-16 lg:py-24 flex flex-col justify-between min-h-[380px] group">
           <h3 className="display-heading text-2xl lg:text-3xl text-white">
             {footerData.ctaText}
           </h3>
 
-          <a href="#commitment" className="self-center mt-8">
+          <a
+            href="#commitment"
+            className="self-end mt-8"
+          >
             <svg
-              className="h-16 w-16 lg:h-20 lg:w-20 text-white/50 hover:text-white hover:scale-110 transition-all duration-500"
+              className="h-16 w-16 lg:h-20 lg:w-20 text-white/40 group-hover:text-white group-hover:translate-x-2 transition-all duration-500"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

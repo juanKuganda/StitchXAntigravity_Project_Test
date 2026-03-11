@@ -9,13 +9,13 @@ export default function Founders() {
   return (
     <section
       id="founders"
-      className="bg-foreground text-white py-20 lg:py-28 relative"
+      className="bg-foreground text-white py-24 lg:py-32 overflow-hidden"
     >
       <div
         ref={ref}
         className={`mx-auto max-w-[1200px] px-8 lg:px-12 reveal ${isVisible ? "visible" : ""}`}
       >
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-20">
           {/* Left: Text content */}
           <div>
             <h2 className="display-heading text-[clamp(2.5rem,6vw,4.5rem)] text-white italic leading-[0.92]">
@@ -27,7 +27,7 @@ export default function Founders() {
             </p>
 
             {/* Featured founders info */}
-            <div className="mt-12 border-l-2 border-primary pl-6">
+            <div className="mt-14 border-l-2 border-primary pl-6">
               <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-primary">
                 {foundersData.featured.label}
               </span>
@@ -48,9 +48,9 @@ export default function Founders() {
 
           {/* Right: Grayscale illustration placeholder */}
           <div className="relative">
-            <div className="aspect-[3/4] bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a] rounded-sm overflow-hidden flex items-center justify-center relative group">
-              {/* Portrait illustration placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center">
+            <div className="aspect-[3/4] bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a] rounded-sm overflow-hidden img-zoom group">
+              {/* Portrait placeholder */}
+              <div className="h-full w-full flex items-center justify-center">
                 <svg
                   className="w-40 h-40 text-white/5 group-hover:text-white/10 transition-colors duration-700"
                   viewBox="0 0 24 24"
@@ -64,10 +64,10 @@ export default function Founders() {
               <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#1a1a1a] to-transparent" />
             </div>
 
-            {/* Floating red CTA circle */}
+            {/* Floating red CTA circle — inside bounds */}
             <a
               href="#commitment"
-              className="absolute -bottom-6 -right-6 lg:bottom-4 lg:right-4 h-20 w-20 rounded-full bg-primary flex items-center justify-center text-white text-[10px] font-bold tracking-wider uppercase text-center leading-tight hover:scale-110 hover:bg-primary-hover transition-all duration-500 shadow-lg shadow-primary/30 spin-slow-hover"
+              className="absolute bottom-6 right-6 h-20 w-20 rounded-full bg-primary flex items-center justify-center text-white text-[10px] font-bold tracking-wider uppercase text-center leading-tight hover:scale-110 hover:bg-primary-hover transition-all duration-500 glow-pulse z-10"
               style={{ padding: "12px" }}
             >
               {foundersData.ctaText}

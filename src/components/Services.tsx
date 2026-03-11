@@ -8,7 +8,7 @@ export default function Services() {
   const [gridRef, gridVisible] = useScrollReveal({ threshold: 0.05 });
 
   return (
-    <section id="services" className="bg-[#f5f5f0] pb-20 lg:pb-28">
+    <section id="services" className="bg-[#f5f5f0] pb-24 lg:pb-32 overflow-hidden">
       <div className="mx-auto max-w-[1200px] px-8 lg:px-12">
         {/* Header row */}
         <div

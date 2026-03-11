@@ -8,7 +8,7 @@ export default function Principles() {
   const [gridRef, gridVisible] = useScrollReveal({ threshold: 0.05 });
 
   return (
-    <section className="bg-[#f5f5f0] py-20 lg:py-28">
+    <section className="bg-[#f5f5f0] py-24 lg:py-32 overflow-hidden">
       <div className="mx-auto max-w-[1200px] px-8 lg:px-12">
         {/* Centered header — italic red FOUR PRINCIPLES */}
         <div

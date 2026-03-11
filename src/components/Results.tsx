@@ -9,7 +9,7 @@ export default function Results() {
   const [bottomRef, bottomVisible] = useScrollReveal({ threshold: 0.05 });
 
   return (
-    <section id="results" className="bg-foreground text-white">
+    <section id="results" className="bg-foreground text-white overflow-hidden">
       {/* Header area */}
       <div className="mx-auto max-w-[1200px] px-8 lg:px-12 py-20 lg:py-28">
         <div
@@ -110,7 +110,7 @@ export default function Results() {
       {/* Bottom row: Extra cards + Quote */}
       <div
         ref={bottomRef}
-        className="mx-auto max-w-[1200px] px-8 lg:px-12 pb-4"
+        className="mx-auto max-w-[1200px] px-8 lg:px-12 pb-8"
       >
         <div className="grid lg:grid-cols-3 gap-4">
           {/* E-commerce card */}

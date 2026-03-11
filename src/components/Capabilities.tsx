@@ -7,7 +7,7 @@ export default function Capabilities() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section className="bg-[#f5f5f0] py-20 lg:py-28">
+    <section className="bg-[#f5f5f0] py-24 lg:py-32 overflow-hidden">
       <div className="mx-auto max-w-[1200px] px-8 lg:px-12">
         {/* Main editorial headline */}
         <div ref={ref} className={`reveal ${isVisible ? "visible" : ""}`}>

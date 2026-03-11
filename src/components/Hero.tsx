@@ -4,47 +4,47 @@ import { heroData } from "@/data/mockData";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center bg-[#f5f5f0] overflow-hidden">
-      <div className="mx-auto max-w-[1200px] px-8 lg:px-12 w-full pt-28 pb-20">
+    <section className="relative min-h-screen flex flex-col justify-center bg-background overflow-hidden">
+      <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-14 w-full pt-24 pb-16">
         {/* Top label with red dot */}
         <div
-          className="flex items-center gap-3 mb-10 animate-slide-left"
+          className="flex items-center gap-2 mb-2 animate-slide-left"
           style={{ animationDelay: "0.1s" }}
         >
-          <span className="h-2.5 w-2.5 rounded-full bg-primary animate-pulse" />
-          <span className="text-[12px] font-bold tracking-[0.15em] uppercase text-foreground">
+          <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
+          <span className="text-[11px] font-bold tracking-[0.15em] uppercase text-foreground">
             {heroData.topLabel}
           </span>
         </div>
 
-        {/* Main Headline */}
+        {/* Main Headline — left-aligned, ~45% viewport width */}
         <h1
-          className="display-heading text-[clamp(2.8rem,6.5vw,5.5rem)] text-foreground max-w-3xl animate-slide-up"
-          style={{ animationDelay: "0.2s", lineHeight: "0.95" }}
+          className="display-heading text-[clamp(2.4rem,5.5vw,4.8rem)] text-foreground max-w-[540px] animate-slide-up"
+          style={{ animationDelay: "0.2s", lineHeight: "0.93" }}
         >
           {heroData.headline}
         </h1>
 
-        {/* Description */}
+        {/* Description — tight to headline */}
         <p
-          className="mt-12 text-[15px] leading-[1.7] text-foreground/50 max-w-sm animate-slide-up"
+          className="mt-6 text-[14px] leading-[1.7] text-foreground/45 max-w-[340px] animate-slide-up"
           style={{ animationDelay: "0.5s" }}
         >
           {heroData.description}
         </p>
 
-        {/* CTA Button */}
+        {/* CTA Button — tight to description */}
         <div
-          className="mt-8 animate-slide-up"
+          className="mt-5 animate-slide-up"
           style={{ animationDelay: "0.7s" }}
         >
-          <a href="#results" className="inline-flex items-center gap-4 group">
-            <span className="btn-red py-3.5 px-7 text-[12px]">
+          <a href="#results" className="inline-flex items-center gap-3 group">
+            <span className="btn-red py-3 px-6 text-[11px]">
               {heroData.cta}
             </span>
             <span className="text-primary group-hover:translate-x-2 transition-transform duration-300">
               <svg
-                className="h-5 w-5"
+                className="h-4 w-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -61,9 +61,9 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Bottom divider */}
+      {/* Subtle bottom divider */}
       <div
-        className="absolute bottom-0 left-0 right-0 h-[3px] bg-foreground line-sweep"
+        className="absolute bottom-0 left-0 right-0 h-[2px] bg-foreground/10 line-sweep"
         style={{ animationDelay: "1s" }}
       />
     </section>

@@ -17,25 +17,25 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#f5f5f0]/95 backdrop-blur-md shadow-sm"
+          ? "bg-background/95 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-[1200px] px-8 lg:px-12">
-        <div className="flex h-[72px] items-center justify-between">
-          {/* Logo */}
+      <div className="mx-auto max-w-[1400px] px-6 sm:px-10 lg:px-14">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo — red italic bold */}
           <a
             href="#"
-            className="brand-logo text-lg tracking-wide hover:opacity-80 transition-opacity"
+            className="brand-logo text-[15px] tracking-wide hover:opacity-80 transition-opacity"
           >
             {siteConfig.name}
           </a>
 
           {/* Right side: CTA + Hamburger */}
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-4">
             <a
               href="#commitment"
-              className="hidden sm:inline-flex h-9 items-center justify-center rounded-full bg-primary px-6 text-[11px] font-bold tracking-[0.12em] uppercase text-white hover:bg-primary-hover hover:scale-105 transition-all duration-300"
+              className="hidden sm:inline-flex h-8 items-center justify-center rounded-full bg-primary px-5 text-[10px] font-bold tracking-[0.12em] uppercase text-white hover:bg-primary-hover hover:scale-105 transition-all duration-300"
             >
               Work with us
             </a>
@@ -43,17 +43,17 @@ export default function Navbar() {
             {/* Hamburger icon */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="flex flex-col gap-[6px] p-2 group"
+              className="flex flex-col gap-[5px] p-2 group"
               aria-label="Menu"
             >
               <span
-                className={`block h-[2px] w-6 bg-foreground transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-[8px]" : ""} group-hover:w-5`}
+                className={`block h-[2px] w-5 bg-foreground transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-[7px]" : ""} group-hover:w-4`}
               />
               <span
-                className={`block h-[2px] w-6 bg-foreground transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`}
+                className={`block h-[2px] w-5 bg-foreground transition-all duration-300 ${mobileOpen ? "opacity-0" : ""}`}
               />
               <span
-                className={`block h-[2px] w-6 bg-foreground transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-[8px]" : ""} group-hover:w-4`}
+                className={`block h-[2px] w-5 bg-foreground transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-[7px]" : ""} group-hover:w-3`}
               />
             </button>
           </div>

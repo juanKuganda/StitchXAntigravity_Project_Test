@@ -7,7 +7,7 @@ export default function DataSection() {
   const [ref, isVisible] = useScrollReveal();
 
   return (
-    <section className="bg-foreground text-white py-20 lg:py-28">
+    <section className="bg-foreground text-white py-24 lg:py-32 overflow-hidden">
       <div
         ref={ref}
         className={`mx-auto max-w-[1200px] px-8 lg:px-12 reveal ${isVisible ? "visible" : ""}`}
